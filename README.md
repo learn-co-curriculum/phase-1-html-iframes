@@ -39,7 +39,7 @@ to display. Depending on the website that you are using in your iframe, it might
 have a size built in, but to be safe you always want to specify a size. This can
 also be controlled with CSS (which you'll learn about a bit later), so a good
 rule of thumb is to specify the biggest size that you'll want to show on your
-website. 
+website. Sizes can be specified in either a specific measurement, or in percentages. 
 
 ### `frameborder` and `style` 
 `frameborder` is a bit of a legacy from back when web browsers thought it was a
