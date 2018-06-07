@@ -41,7 +41,7 @@ also be controlled with CSS (which you'll learn about a bit later), so a good
 rule of thumb is to specify the biggest size that you'll want to show on your
 website. 
 
-### frameborder and style 
+### `frameborder` and `style` 
 `frameborder` is a bit of a legacy from back when web browsers thought it was a
 good idea to give elements built-in frames. Nowadays we like to control that
 kind of thing with CSS, so most of the time you'll want to set both
@@ -49,7 +49,7 @@ kind of thing with CSS, so most of the time you'll want to set both
 attributes in multiple ways, specifying both will ensure that you won't have a
 frame popping up unexpectedly. 
 
-### allowfullscreen 
+### `allowfullscreen` 
 Like the `required` attribute for HTML form elements, `allowfullscreen` is built
 into HTML5. Simply by including `allowfullscreen` in our attributes, browsers
 understand that means that the iframe is allowed to be placed into fullscreen
