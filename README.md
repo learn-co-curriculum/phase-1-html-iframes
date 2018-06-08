@@ -3,9 +3,9 @@
 ## Problem Statement
 
 Some sites let us use _their_ creations in _our_ HTML documents. We're sure
-you've noticed how many pages have Google maps built into their pages. The HTML
-tag that lets us put someone else's web page _inside_ our page is the `iframe`
-tag.  We'll explore it in this lesson.
+you've noticed how many pages have Google maps built into them. The HTML tag
+that lets us put someone else's web page _inside_ our page is the `iframe` tag.
+We'll explore it in this lesson.
 
 
 ## Objectives
@@ -15,11 +15,11 @@ tag.  We'll explore it in this lesson.
 
 ## Describe How `iframe` Elements Work
 
-We can link to other HTML by using an `iframe` tag. The `iframe` creates a
-window inside the page where this "shared" information appears.
+We can display HTML from other pages by using an `iframe` tag. The `iframe`
+creates a window inside the page where this "shared" information appears.
 
 An `iframe`'s `src` attribute points to the location of the shared material.
-Examples are a custom search bar or Youtube video.
+Examples are a custom search bar or YouTube video.
 
 Here's an example:
 
@@ -34,7 +34,7 @@ Here's an example:
 ### `src`
 
 The `iframe` element has one required attribute: `src`. The `src` attribute takes a
-link and displays the page requested.
+URL (`http://example.com/....`) and displays the page requested.
 
 ### `width` and `height`
 
