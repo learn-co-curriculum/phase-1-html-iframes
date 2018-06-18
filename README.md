@@ -47,9 +47,14 @@ there as well.
 ### `frameborder` and `style`
 
 In earlier HTML versions, `iframe`s were put inside of borders by default.
-Many people found that ugly. The `frameborder` allows us to turn the border
-off.  Nowadays we like to control that kind of thing with CSS, so most of the
-time you'll want to set both `frameborder="0"` AND `style="border:0"`.
+Many people found that ugly. The `frameborder` allowed us to turn the border
+off.  Nowadays we like to control that kind of thing with CSS and `frameborder`
+is consider _deprecated_ meaning "likely to be removed from the standard."
+
+We see this appear often in `iframe` links as providers try to support _as many
+browsers as possible_. It's important to understand what it means, but you
+probably won't need to write it much.  If you do, you'll want to set both
+`frameborder="0"` AND `style="border:0"`.
 
 ### `allowfullscreen`
 
