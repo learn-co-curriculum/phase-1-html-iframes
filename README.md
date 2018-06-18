@@ -59,10 +59,13 @@ probably won't need to write it much.  If you do, you'll want to set both
 ### `allowfullscreen`
 
 Like the `required` attribute for HTML form elements, `allowfullscreen` is built
-into HTML5. Simply by including `allowfullscreen` in our attributes, browsers
-understand that means that the iframe is allowed to be placed into fullscreen
-mode. If you'd rather avoid that, just don't include `allowfullscreen` in your
-attributes.
+into HTML5. If the provider provides support for a JavaScript method called
+`requestFullScreen()`, then your page can send the `iframe` full screen. If
+not, it can't. It's important to be able to understand this attribute and
+realize that you can't get around any restrictions unless the _provider_ wants
+you to. For more details visit [MDN][mdn-allowfull].
+
+[mdn-allow]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
 ## Conclusion
 
