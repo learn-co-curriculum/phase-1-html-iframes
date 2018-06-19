@@ -47,17 +47,31 @@ there as well.
 ### `frameborder` and `style`
 
 In earlier HTML versions, `iframe`s were put inside of borders by default.
-Many people found that ugly. The `frameborder` allows us to turn the border
-off.  Nowadays we like to control that kind of thing with CSS, so most of the
-time you'll want to set both `frameborder="0"` AND `style="border:0"`.
+Many people found that ugly. The `frameborder` allowed us to turn the border
+off.  
+
+The `frameborder` attribute is considered _deprecated_, meaning "likely to be
+removed from the standard." In modern browsers, we can control borders  using
+CSS, as with our example, `style="border:0"`. You might not be familiar with CSS
+yet. For the time being, feel free to simply add this attribute.
+
+Google and sites like YouTube still provide a `frameborder` attribute in their
+embedded map examples. We see this appear often in `iframe` links as providers
+try to support _as many browsers as possible_. It's important to understand what
+it means, but you probably won't need to write it much.  If you do, you'll want
+to set both `frameborder="0"` AND `style="border:0"`.
 
 ### `allowfullscreen`
 
 Like the `required` attribute for HTML form elements, `allowfullscreen` is built
-into HTML5. Simply by including `allowfullscreen` in our attributes, browsers
-understand that means that the iframe is allowed to be placed into fullscreen
-mode. If you'd rather avoid that, just don't include `allowfullscreen` in your
-attributes.
+into HTML5. The `allowfullscreen` attribute uses a JavaScript method called
+`requestFullScreen()` to send the `iframe` to full screen. If `allowfullscreen`
+isn't included, the element can't be placed into full screen mode. It's
+important to be able to understand this attribute and realize that you can't get
+around any restrictions unless the _provider_ wants you to. For more details
+visit [MDN][mdn-allowfull].
+
+[mdn-allowfull]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
 ## Conclusion
 
