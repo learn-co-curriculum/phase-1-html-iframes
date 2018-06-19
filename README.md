@@ -51,8 +51,9 @@ Many people found that ugly. The `frameborder` allowed us to turn the border
 off.  
 
 The `frameborder` attribute is considered _deprecated_, meaning "likely to be
-removed from the standard." In modern browsers, we can control borders _just_
-using CSS, as with our example, `style="border:0"`.
+removed from the standard." In modern browsers, we can control borders  using
+CSS, as with our example, `style="border:0"`. You might not be familiar with CSS
+yet. For the time being, feel free to simply add this attribute.
 
 Google and sites like YouTube still provide a `frameborder` attribute in their
 embedded map examples. We see this appear often in `iframe` links as providers
@@ -65,12 +66,12 @@ to set both `frameborder="0"` AND `style="border:0"`.
 Like the `required` attribute for HTML form elements, `allowfullscreen` is built
 into HTML5. The `allowfullscreen` attribute uses a JavaScript method called
 `requestFullScreen()` to send the `iframe` to full screen. If `allowfullscreen`
-isn't included, the element can't be placed into full screen mode.. It's
+isn't included, the element can't be placed into full screen mode. It's
 important to be able to understand this attribute and realize that you can't get
 around any restrictions unless the _provider_ wants you to. For more details
 visit [MDN][mdn-allowfull].
 
-[mdn-allow]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+[mdn-allowfull]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
 ## Conclusion
 
