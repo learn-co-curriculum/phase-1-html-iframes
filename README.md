@@ -48,22 +48,27 @@ there as well.
 
 In earlier HTML versions, `iframe`s were put inside of borders by default.
 Many people found that ugly. The `frameborder` allowed us to turn the border
-off.  Nowadays we like to control that kind of thing with CSS and `frameborder`
-is consider _deprecated_ meaning "likely to be removed from the standard."
+off.  
 
-We see this appear often in `iframe` links as providers try to support _as many
-browsers as possible_. It's important to understand what it means, but you
-probably won't need to write it much.  If you do, you'll want to set both
-`frameborder="0"` AND `style="border:0"`.
+The `frameborder` attribute is considered _deprecated_, meaning "likely to be
+removed from the standard." In modern browsers, we can control borders _just_
+using CSS, as with our example, `style="border:0"`.
+
+Google and sites like YouTube still provide a `frameborder` attribute in their
+embedded map examples. We see this appear often in `iframe` links as providers
+try to support _as many browsers as possible_. It's important to understand what
+it means, but you probably won't need to write it much.  If you do, you'll want
+to set both `frameborder="0"` AND `style="border:0"`.
 
 ### `allowfullscreen`
 
 Like the `required` attribute for HTML form elements, `allowfullscreen` is built
-into HTML5. If the provider provides support for a JavaScript method called
-`requestFullScreen()`, then your page can send the `iframe` full screen. If
-not, it can't. It's important to be able to understand this attribute and
-realize that you can't get around any restrictions unless the _provider_ wants
-you to. For more details visit [MDN][mdn-allowfull].
+into HTML5. The `allowfullscreen` attribute uses a JavaScript method called
+`requestFullScreen()` to send the `iframe` to full screen. If `allowfullscreen`
+isn't included, the element can't be placed into full screen mode.. It's
+important to be able to understand this attribute and realize that you can't get
+around any restrictions unless the _provider_ wants you to. For more details
+visit [MDN][mdn-allowfull].
 
 [mdn-allow]: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
 
